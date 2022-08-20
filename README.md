@@ -1,10 +1,6 @@
 # Bore
 
 <p align="center">
-  <img src="./images/logo.png" width="300" alt="Aylin">
-</p>
-
-<p align="center">
     <em>Bore is a modern and minimal NeoVim dark theme with bright colors. The theme is based on the great theme <a href="https://github.com/AhmedAbdulrahman/aylin.vim">Aylin Theme</a>. See Credits for a detailed lineage.</em>
 </p>
 
