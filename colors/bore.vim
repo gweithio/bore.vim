@@ -7,7 +7,7 @@
 " === Colors ==="
 " --------------------------"
 :let _white       = '#ffffff'
-:let _l_white     = '#c8c8db'
+:let _l_white     = '#cacadd'
 :let _d_white     = '#c8c8db'
 :let _gray_light  = '#74778c'
 :let _gray        = '#606375'
@@ -15,7 +15,7 @@
 :let _semigray    = "#42444b"
 :let _lightblack  = '#313e52'
 :let _semiblack   = '#262f3e'
-:let _black       = '#0b0b0b'
+:let _black       = '#0a0a0a'
 
 :let _aubergine   = '#FD98B9'
 :let _marzipan    = '#ecc48d'
@@ -159,7 +159,7 @@ let colorgroup['Constant']     = {"GUIFG": _marzipan, "GUI": "bold"}
 let colorgroup['Identifier']   = {"GUIFG": _aubergine}
 let colorgroup['Statement']    = {"GUIFG": _l_sky}
 let colorgroup['PreProc']      = {"GUIFG": _white}
-let colorgroup['Type']         = {"GUIFG": _d_white}
+let colorgroup['Type']         = {"GUIFG": _white}
 let colorgroup['Special']      = {"GUIFG": _aubergine}
 let colorgroup['Underlined']   = {"GUIFG": _marzipan, "GUI": "underline"}
 let colorgroup['Error']        = {"GUIFG": _black, "GUIBG": _aubergine}
