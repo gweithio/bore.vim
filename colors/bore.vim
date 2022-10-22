@@ -216,10 +216,10 @@ let colorgroup['LspDiagnosticsDefaultError'] = {"GUIFG": _pink, "GUIBG":  _black
 let colorgroup['LspDiagnosticsDefaultWarning'] = {"GUIFG": _marzipan, "GUIBG":  _black }
 let colorgroup['LspDiagnosticsDefaultHint'] = {"GUIFG": _l_sky, "GUIBG":  _black }
 
-let colorgroup['LspFloatWinNormal']          = {"GUIFG": _d_white, "GUIBG":  _aubergine }
-let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _sap }
-let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _sap }
-let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _sap }
+let colorgroup['LspFloatWinNormal']          = {"GUIFG": _d_white, "GUIBG":  _black }
+let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _black }
+let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _black }
+let colorgroup['LspFloatWinBorder']          = {"GUIFG": _sap, "GUIBG":  _black }
 
  let colorgroup['BufferLineIndicatorSelected']   = {"GUIFG": _l_sky}
  let colorgroup['BufferLineFill']                = {"GUIBG":  _pink}
@@ -240,15 +240,15 @@ let colorgroup['LspReferenceRead']          = {"GUIBG":  _gray_light }
 "used for highlighting 'write' references"
 let colorgroup['LspReferenceWrite']         = {"GUIBG":  _gray_light }
 
-let colorgroup['DiagnosticError']        = {"GUIFG":  _pink }
-let colorgroup['DiagnosticWarn']         = {"GUIFG":  _marzipan }
-let colorgroup['DiagnosticInfo']         = {"GUIFG":  _sky }
-let colorgroup['DiagnosticHint']         = {"GUIFG":  _d_turquoise }
+let colorgroup['DiagnosticError']        = {"GUIFG":  _pink, "GUIBG": _black}
+let colorgroup['DiagnosticWarn']         = {"GUIFG":  _marzipan, "GUIBG": _black }
+let colorgroup['DiagnosticInfo']         = {"GUIFG":  _sky, "GUIBG": _black }
+let colorgroup['DiagnosticHint']         = {"GUIFG":  _d_turquoise, "GUIBG": _black }
 
-let colorgroup['DiagnosticVirtualTextError']        = {"GUIFG": _pink, "GUIBG":  s:hex_color_darken(_pink, 0.10) }
-let colorgroup['DiagnosticVirtualTextWarn']         = {"GUIFG": _marzipan,"GUIBG":  s:hex_color_darken(_marzipan, 0.10) }
-let colorgroup['DiagnosticVirtualTextInfo']         = {"GUIFG": _sky,"GUIBG":  s:hex_color_darken(_sky, 0.10) }
-let colorgroup['DiagnosticVirtualTextHint']         = {"GUIFG": _d_turquoise,"GUIBG":  s:hex_color_darken(_d_turquoise, 0.10) }
+let colorgroup['DiagnosticVirtualTextError']        = {"GUIFG": _pink, "GUIBG": _black }
+let colorgroup['DiagnosticVirtualTextWarn']         = {"GUIFG": _marzipan, "GUIBG": _black }
+let colorgroup['DiagnosticVirtualTextInfo']         = {"GUIFG": _sky, "GUIBG": _black }
+let colorgroup['DiagnosticVirtualTextHint']         = {"GUIFG": _d_turquoise, "GUIBG": _black }
 
 let colorgroup['DiagnosticUnderlineError']        = {"style":  "undercurl", "sp": _pink }
 let colorgroup['DiagnosticUnderlineWarn']         = {"style":  "undercurl", "sp": _marzipan }
@@ -786,15 +786,20 @@ hi StatusWarning ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui
 hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#d0d0d0 gui=bold
 hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
 hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
-hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
-hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
 hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
 hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
 hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-hi CocInfoFloat ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE 
+
+"  hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
+"  hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
+
+"  hi CocErrorSign ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#d0d0d0 gui=NONE
+"  hi CocInfoSign ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#c9b16f gui=NONE
+"  hi CocWarningSign ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#c9b16f gui=NONE
+
+"  hi CocErrorFloat ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#b3646e gui=NONE 
+"  hi CocInfoFloat ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#d0d0d0 gui=NONE 
+"  hi CocWarningFloat ctermbg=NONE ctermfg=8 cterm=NONE guibg=#0a0a0a guifg=#c9b16f gui=NONE
 
 hi Pmenu ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
 hi PmenuSbar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
@@ -812,3 +817,4 @@ hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NO
 " Must appear at the end of the file to work around this oddity:
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
+
